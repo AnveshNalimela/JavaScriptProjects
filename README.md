@@ -13,6 +13,7 @@ Digital Clock:
 ![image](https://github.com/AnveshNalimela/JavaScriptProjects/assets/151531961/683ae9fd-143b-4099-a46f-6a1e85677d93)
 
 Ecommerce product View:
-![Uploading image.png…]()
+![image](https://github.com/AnveshNalimela/JavaScriptProjects/assets/151531961/4bb1f645-245b-47d9-8c03-bd2d547effab)
+
 
 
