@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Digital-Clock</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="conatiner">
+            <div class="clock">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="mins">00</span>
+                <span>:</span>
+                <span id="secs">00</span>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script>
+
+        let hrs = document.getElementById("hrs")
+        let mins = document.getElementById("mins")
+        let secs = document.getElementById("secs")
+        setInterval(() => {
+            let currentTime = new Date();
+            hrs.innerHTML = (currentTime.getHours() < 10 ? "0" : "") + currentTime.getHours()
+            mins.innerHTML = (currentTime.getMinutes() < 10 ? "0" : "") + currentTime.getMinutes()
+            secs.innerHTML = (currentTime.getSeconds() < 10 ? "0" : "") + currentTime.getSeconds()
+
+
+        }, 1000)
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

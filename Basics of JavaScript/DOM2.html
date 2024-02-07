@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <div class="cont">
+        <p class="text">Welcome to DOM Tutuorial</p>
+    </div>
+    <div class="parent">
+        <p>Welcome to DOM Tutuorial 1</p>
+        <p>Welcome to DOM Tutuorial 2</p>
+        <p class="third">Welcome to DOM Tutuorial 3</p>
+        <p>Welcome to DOM Tutuorial 4</p>
+    </div>
+    <ul id="menu">
+        <li>home</li>
+        <li>about</li>
+        <li>project</li>
+    </ul>
+
+
+
+    <script>
+
+        let parent = document.querySelector(".parent");
+        console.log(parent.childNodes);
+        let txt = document.querySelector(".text");
+        console.log(txt.parentNode);
+        let third = document.querySelector(".third");
+        console.log(third.nextElementSibling);
+        console.log(third.previousElementSibling);
+
+
+        let div = document.createElement("div");
+        div.innerHTML = "<p>Welcome to Web stack added</p>"
+        div.id = "paragraph"
+        div.className = "para class";
+        document.body.appendChild(div);
+        console.log(div)
+
+        let menu = document.getElementById("menu");
+        let list = document.createElement("li")
+        list.innerHTML = "contact"
+        menu.appendChild(list)
+
+        console.log(menu)
+        //Displays all the content
+        console.log(menu.textContent);
+        //Display all the visible content
+        console.log(menu.innerText);
+        //menu.textContent = "Hello";
+
+        //menu.innerHTML="<h2>Hello World</h2>"
+
+        menu.insertAdjacentHTML("beforeend", "<li>projects</li>")
+
+        menu.after("hello")
+        menu.append("last added node using append()")
+        menu.prepend("first added node using prepend()")
+
+        let newNode = menu.cloneNode();
+        console.log(newNode)
+        let newNode_true = menu.cloneNode(true);
+        console.log(newNode_true)
+
+
+        //menu.removeChild(menu.lastElementChild)
+
+    </script>
+</body>
+
+</html>

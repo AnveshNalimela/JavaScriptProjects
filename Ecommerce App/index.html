@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ECommerce WebSite</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="gallery">
+                <img src="Images/pic1.jpg" id="productImg">
+                <div class="controls">
+                    <span class="btn active "></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+
+            </div>
+            <div class="details">
+                <h1>Casual T Shirt</h1>
+                <h2>$15.00</h2>
+                <h3>30% OFF</h3>
+                <p>The Jeep Wrangler is well-known for its rugged design, off-road capabilities, and iconic styling. It
+                    has a rich history and is often associated with outdoor adventures and exploration.</p>
+                <form class="size-select">
+                    <p>Size:</p>
+                    <label for="small">
+                        <input type="radio" name="size" id="small">
+                        <span>S</span>
+
+                    </label>
+                    <label for="medium">
+                        <input type="radio" name="size" id="medium">
+                        <span>M</span>
+
+                    </label>
+                    <label for="large">
+                        <input type="radio" name="size" id="large">
+                        <span>L</span>
+
+                    </label>
+                    <label for="extraLarge">
+                        <input type="radio" name="size" id="extraLarge">
+                        <span>XL</span>
+                    </label>
+                    <label for="xx-Large">
+                        <input type="radio" name="size" id="xx-Large">
+                        <span>XL</span>
+                    </label>
+                </form>
+                <div class="color-select">
+                    <p>Color</p>
+                    <label for="red">
+                        <input type="radio" name="color" id="red">
+                        <span class="color-1"></span>
+
+                    </label>
+                    <label for="green">
+                        <input type="radio" name="color" id="green">
+                        <span class="color-2"></span>
+
+                    </label>
+                    <label for="blue">
+                        <input type="radio" name="color" id="blue">
+                        <span class="color-3"></span>
+
+                    </label>
+                    <label for="black">
+                        <input type="radio" name="color" id="black">
+                        <span class="color-4"></span>
+
+                    </label>
+                </div>
+                <div class="quantity-select">
+                    <p>Quantity :</p>
+                    <input type="number" value="1">
+                </div>
+                <button>Buy Now</button>
+
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let productImg = document.getElementById("productImg")
+        let btn = document.getElementsByClassName("btn");
+        btn[0].onclick = function () {
+            productImg.src = "Images/pic1.jpg";
+            for (bt of btn) {
+                btn.classList.remove("active");
+            }
+            btn[0].classList.add("active");
+        }
+        btn[1].onclick = function () {
+            productImg.src = "Images/pic2.jpg";
+            for (bt of btn) {
+                btn.classList.remove("active");
+            }
+            btn[1].classList.add("active");
+        }
+        btn[2].onclick = function () {
+            productImg.src = "Images/pic3.jpg";
+            for (bt of btn) {
+                btn.classList.remove("active");
+            }
+            btn[2].classList.add("active");
+        }
+        btn[3].onclick = function () {
+            productImg.src = "Images/pic4.jpg";
+            for (bt of btn) {
+                btn.classList.remove("active");
+            }
+            btn[3].classList.add("active");
+        }
+
+    </script>
+</body>
+
+</html>

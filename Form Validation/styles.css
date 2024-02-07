@@ -1,0 +1,90 @@
+body {
+  background: #fff7f1;
+}
+
+.formdiv {
+  background: #ffe4c9;
+  display: block;
+  width: 450px;
+  padding: 5px;
+  height: 460px;
+  margin-top: 20px;
+  padding: top 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+label {
+  width: 150px;
+}
+.center-icon {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 90px;
+  color: #e78895;
+}
+input {
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid #000; /* Set the color of the line */
+  outline: none;
+  background: transparent;
+  width: 250px;
+  padding-left: 15px;
+}
+
+#form {
+  margin-top: 70px;
+}
+.input-group {
+  margin: 40px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.input-group #msg {
+  margin-top: 60px;
+}
+.input-group span {
+  bottom: 12px;
+  right: 17px;
+  color: #ed2b2a;
+  font-size: small;
+  align-self: flex-end; /* Align the span to the bottom of its container */
+  margin-right: 5px;
+  padding-left: 10px;
+}
+input {
+  font-size: 16px;
+}
+
+#btn {
+  display: block;
+  text-align: center;
+  margin: auto;
+  background: #bed1cf;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+  margin-top: 43px;
+  font-size: 20px;
+}
+
+#submit-error {
+  display: block;
+  margin-left: 150px;
+  color: #ed2b2a;
+  margin-top: 3px;
+}
+
+.input-group span i {
+  color: #aad9bb;
+}

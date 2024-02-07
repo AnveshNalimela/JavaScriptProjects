@@ -1,0 +1,65 @@
+body {
+  background-color: #fff7f1;
+  font-size: 20px;
+}
+
+h1 {
+  margin-left: 10px;
+  font-size: 70px;
+  text-wrap: transparent;
+  color: #944e63;
+  display: inline-block;
+}
+#logo {
+  margin-left: 150px;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.btn {
+  margin-left: 50px;
+  margin-top: 5px;
+  width: 150px;
+  height: 70px;
+  background-color: #bed1cf;
+  border-radius: 10px;
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.notes-container {
+  margin: 30px;
+}
+
+#name {
+  width: 550px;
+  height: 40px;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.inputBox {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 600px;
+  height: 300px;
+  background-color: #ffe4c9;
+  padding: 15px;
+  position: relative;
+}
+.deleteIcon {
+  width: 50px;
+  height: 40px;
+  margin: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}

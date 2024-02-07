@@ -1,0 +1,44 @@
+<html>
+<!DOCTYPE html>
+
+<head>
+    <title>Java Script tutuorial</title>
+
+</head>
+
+<body>
+    <div>
+        <h1 id="message">Java Script DOM !!</h1>
+        <input type="text" name="user" value="aree">
+        <h2>First heading</h2>
+        <h2>second heading</h2>
+        <h2>third heading</h2>
+        <h2>Fourth heading</h2>
+        <p class="para">Class Name document</p>
+
+    </div>
+    <div id="cont">
+        <p class="para">Class Name document inside the container div.</p>
+
+    </div>
+    <script>
+        let msg = document.getElementById("message");
+        console.log(msg)
+        let userInput = document.getElementsByName("user");
+        console.log(userInput)
+        let heading = document.getElementsByTagName("h2");
+        console.log(heading)
+        let paragraph = document.getElementsByClassName("para");
+        console.log(paragraph)
+
+        let cont = document.getElementById("cont")
+        let paraInsideCont = cont.getElementsByClassName("para")
+        console.log(paraInsideCont)
+        //query selector used for css
+        let msg1 = document.querySelector(".message");
+        console.log(msg1)
+    </script>
+
+</body>
+
+</html>

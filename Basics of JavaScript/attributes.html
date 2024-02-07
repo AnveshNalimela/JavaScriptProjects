@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <style>
+        input {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="title" class="heading">Great Learnring</h2>
+    <input type="text" id="username" placeholder="username" style="background-color:red;font-size:20px">
+    <div id="container">
+        <button id="btn" type="button" onclick="console.log(event.target)">Click here</button>
+
+    </div>
+
+
+    <script>
+        let inputBox = document.getElementById("username");
+        console.log(inputBox.attributes)
+
+        console.log(inputBox.getAttribute("type"))
+
+        inputBox.setAttribute("class", "user")
+        console.log(inputBox)
+
+        console.log(inputBox.hasAttribute("class"))
+
+
+        inputBox.removeAttribute("class")
+        console.log(inputBox)
+
+        console.log(inputBox.style)
+        console.log(inputBox.style.fontSize)
+
+        inputBox.style.padding = "10px";
+        console.log(inputBox.style)
+        inputBox.style.cssText += "width:200px;height:100px";
+        console.log(inputBox.style)
+
+        console.log(window.getComputedStyle(inputBox).margin)
+
+        let title = document.getElementById("title");
+        console.log(title.className)
+
+        title.className += "new"
+        console.log(title.classList)
+
+        title.classList.add("newclass")
+        console.log(title)
+        title.classList.remove("newclass")
+        console.log(title)
+
+        function display() {
+            console.log("Button clicked from Fn")
+        }
+
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener('click', function () {
+            console.log("Button clicked!")
+        })
+
+
+
+    </script>
+</body>
+
+</html>

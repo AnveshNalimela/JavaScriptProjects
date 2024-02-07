@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image-Slider</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="gallery-wrap">
+        <img src="Images/back.png" id="backBtn">
+        <div class="gallery">
+            <div>
+                <span><img src="Images/pic.jpg"></span>
+                <span><img src="Images/pic2.jpg"></span>
+                <span><img src="Images/pic3.jpg"></span>
+            </div>
+            <div>
+                <span><img src="Images/pic4.jpg"></span>
+                <span><img src="Images/pic5.jpg"></span>
+                <span><img src="Images/pic6.jpg"></span>
+            </div>
+        </div>
+        <img src="Images/next.png" id="nextBtn">
+
+    </div>
+    <script>
+        let scrollContainer = document.querySelector(`.gallery`);
+        console.log(scrollContainer);
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrolledBehaviour = "auto";
+        });
+        nextBtn.addEventListener("click", () => {
+            scrollContainer.style.scrolledBehaviour = "smooth";
+            scrollContainer.scrollLeft += 90;
+
+        });
+        backBtn.addEventListener("click", () => {
+            console.log("back button clicked")
+            scrollContainer.style.scrolledBehaviour = "smooth";
+            scrollContainer.scrollLeft -= 90;
+
+        })
+
+    </script>
+</body>
+
+</html>

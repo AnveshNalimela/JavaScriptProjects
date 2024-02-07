@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Vadildation</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="formdiv">
+        <i class="fab fa-telegram center-icon"></i>
+        <form id="form">
+            <div class="input-group">
+                <label>Full Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" onkeyup="validateName()">
+                <span id="name-error"></span>
+
+            </div>
+            <div class="input-group">
+                <label>Phone No: </label>
+                <input type="tel" name="phone" id="phone" placeholder="123 456 7890" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+            </div>
+            <div class="input-group">
+                <label>Email Id: </label>
+                <input type="email" name="email" id="email" placeholder="Enter Email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+            <div class="input-group">
+                <label>Your Message: </label>
+                <input type="text" name="msg" id="msg" onkeyup="validateMessage()">
+                <span id="message-error"></span>
+            </div>
+
+
+            <button type="submit" id="btn" onclick=" return validateForm()">Submit</button>
+            <span id="submit-error"></span>
+        </form>
+
+
+    </div>
+
+    <script src="form.js"></script>
+
+
+
+</body>
+
+</html>
